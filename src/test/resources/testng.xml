@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ParaBank Test Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.automation.utils.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Register Tests">
+        <classes>
+            <class name="com.automation.tests.RegisterTest"/>
+        </classes>
+    </test>
+
+    <test name="Data Driven Tests">
+        <classes>
+            <class name="com.automation.tests.DataDrivenLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Faker Registration Tests">
+        <classes>
+            <class name="com.automation.tests.FakerRegistrationTest"/>
+        </classes>
+    </test>
+
+</suite>
